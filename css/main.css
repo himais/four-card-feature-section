@@ -11,6 +11,9 @@
   --color-blue: hsl(212, 86%, 64%);
   --color-blue-dark: hsl(228, 45%, 44%);
   --color-blue-low-opacity: hsla(212, 86%, 64%, 0.4);
+  --font-weight-light: 200;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
 }
 
 * {
@@ -25,7 +28,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
 }
 
 .container {
@@ -47,14 +50,14 @@ body {
 
 .intro__title {
   font-size: 1.6rem;
-  font-weight: 200;
+  font-weight: var(--font-weight-light);
   letter-spacing: 0.01rem;
   line-height: 2rem;
 }
 
 .intro__subtitle {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: 3rem;
   letter-spacing: 0.01rem;
 }
@@ -62,7 +65,7 @@ body {
 .intro__description {
   margin-top: 0.7rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   line-height: 1.7rem;
   letter-spacing: .01rem;
   color: var(--color-gray);
@@ -90,14 +93,14 @@ body {
   font-size: 1.32rem;
   color: var(--color-gray-dark);
   line-height: 2.3rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
 }
 
 .card__description {
   font-size: 0.85rem;
   color: var(--color-gray);
   line-height: 1.6rem;
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   letter-spacing: .01rem;
   margin-top: 0.1rem;
 }
@@ -130,7 +133,7 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.8rem;
   text-align: center;
   color: var(--color-gray-dark);
 }
