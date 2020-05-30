@@ -4,7 +4,7 @@
   --color-gray: hsl(229, 6%, 66%);
   --color-gray-light: hsl(0, 0%, 98%);
   --color-gray-dark: hsl(234, 12%, 34%);
-  --color-gray-dark-low-opacity: hsla(234, 12%, 34%, 0.15);
+  --color-gray-dark-low-opacity: hsla(234, 12%, 34%, 0.1);
   --color-cyan: hsl(180, 62%, 55%);
   --color-red: hsl(0, 78%, 62%);
   --color-orange: hsl(34, 97%, 64%);
@@ -19,8 +19,11 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-size: 15px;
+}
+
+body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
@@ -28,7 +31,7 @@ body {
 .container {
   width: 100%;
   min-height: 100vh;
-  padding: 5.2rem 2rem 1rem;
+  padding: 5.7rem 2.2rem 1rem;
   background-color: var(--color-gray-light);
 }
 
@@ -39,27 +42,30 @@ body {
   flex-direction: column;
   color: var(--color-gray-dark);
   text-align: center;
-  margin-bottom: 4.8rem;
+  margin-bottom: 5rem;
 }
 
 .intro__title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 200;
   letter-spacing: 0.01rem;
-  line-height: 2.4rem;
+  line-height: 2rem;
 }
 
 .intro__subtitle {
-  font-size: 1.53rem;
+  font-size: 1.6rem;
   font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 0.01rem;
 }
 
 .intro__description {
-  margin-top: 1rem;
-  font-size: 0.95rem;
+  margin-top: 0.7rem;
+  font-size: 1rem;
   font-weight: 400;
+  line-height: 1.7rem;
+  letter-spacing: .01rem;
   color: var(--color-gray);
-  line-height: 1.6rem;
 }
 
 .cards {
@@ -69,7 +75,7 @@ body {
 .card {
   background: white;
   margin-bottom: 1.6rem;
-  padding: 1.1rem 1.8rem 1.8rem;
+  padding: 1.3rem 1.9rem 1.8rem;
   border-top: solid 4px;
   border-radius: 5px;
   box-shadow: 0px 10px 20px -10px var(--color-gray-dark-low-opacity),
@@ -81,27 +87,30 @@ body {
 }
 
 .card__title {
-  font-size: 1.25rem;
+  font-size: 1.32rem;
   color: var(--color-gray-dark);
-  line-height: 2.4rem;
+  line-height: 2.3rem;
+  font-weight: 600;
 }
 
 .card__description {
-  font-size: 0.8rem;
-  color: var(--color-gray-dark);
-  line-height: 1.5rem;
-  font-weight: 200;
+  font-size: 0.85rem;
+  color: var(--color-gray);
+  line-height: 1.6rem;
+  font-weight: 400;
+  letter-spacing: .01rem;
+  margin-top: 0.1rem;
 }
 
 .card__image-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 1.7rem;
+  margin-top: 2.3rem;
 }
 
 .card__image {
-  width: 22%;
+  width: 22.5%;
 }
 
 .card--cyan {
@@ -132,7 +141,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .container {
-    padding: 5.1rem 9.5rem 1rem;
+    padding: 5.5rem 9.5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,21 +150,22 @@ body {
 
   .intro {
     width: 50%;
-    margin-bottom: 4rem;
+    margin-bottom: 4.5rem;
   }
 
   .intro__title {
-    font-size: 2.3rem;
-    line-height: 2.7rem;
+    font-size: 2.45rem;
+    line-height: 3rem;
   }
 
   .intro__subtitle {
-    font-size: 2.3rem;
+    font-size: 2.45rem;
     line-height: 3.7rem;
   }
 
   .intro__description {
-    font-size: 1rem;
+    margin-top: 1rem;
+    font-size: 1.03rem;
   }
 
   .cards {
@@ -166,8 +176,8 @@ body {
   }
 
   .card {
-    width: 22rem;
-    height: 16rem;
+    width: 23.5rem;
+    height: 17rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -176,9 +186,14 @@ body {
   }
 
   .card__title {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     color: var(--color-gray-dark);
     line-height: 2.6rem;
+  }
+
+  .card__description {
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
   }
 
   .card__image-container {
