@@ -80,7 +80,7 @@ body {
   margin-bottom: 1.6rem;
   padding: 1.3rem 1.9rem 1.8rem;
   border-top: solid 4px;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0px 10px 20px -10px var(--color-gray-dark-low-opacity),
     0px 10px 30px -10px var(--color-blue-low-opacity);
 }
@@ -180,7 +180,7 @@ body {
 
   .card {
     width: 23.5rem;
-    height: 17rem;
+    height: 16.7rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
